@@ -40,6 +40,7 @@ body {
     border: none;
 }
 
+/* *************  MODALS *************** */
 .modal {
     display: none;
     /* Hidden by default */
@@ -129,8 +130,44 @@ body {
     padding-top: 20px ;
 }
 
-/*  *********** CONTAINER SECTION ************/
 
+/* ****** Create modal ************* */
+
+#modalContent {
+    background-color: #fefefe;
+    margin:  auto;
+    /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+    
+    
+}
+#modalContent input, .contentArea {
+    padding: 10px;
+    margin:10px auto;
+    width: 97%;;
+    border: none;
+    background: #dee2e6;
+}
+#modalContent .contentArea {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 100%;
+    resize: none;
+}
+#modalContent .createBtn {
+    width: 10%;
+    border: none;
+    background: #55a505c4;
+    border: none;
+    padding: 10px;
+    margin: 15px auto;
+    font-size: large;
+    color: #fff;
+}
+
+/*  *********** CONTAINER SECTION ************/
 .container {
     width: 100%;
     position: absolute;
@@ -138,7 +175,6 @@ body {
     transform: translateY(-50%);
     text-align: center;
 }
-
 .postBtn {
     background-color: #edc531;
     border: none;
@@ -149,3 +185,4 @@ body {
     font-size: 1.2rem;
     border-radius: 2px
 }
+

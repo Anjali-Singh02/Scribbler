@@ -30,7 +30,7 @@
 
         </div>
 
-        
+
     </header>
     <div id="signUpModal" class="modal">
 
@@ -75,9 +75,25 @@
     <div class="container">
         <button class="postBtn" id="addPost">Add Posts</button>
         <button class="postBtn" id="createPost">Create Post</button>
-
     </div>
 
+    <div id="createModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content" id="modalContent">
+            <span class="close" id="closeCreate">&times;</span>
+            <h2>Pen Your Post!</h2>
+            <hr>
+            <form action="" id="cPost" class="form">
+                <label for="title">Title</label>
+                <input type="text" placeholder="Enter title of your post" required>
+                <label for="content">Contents</label>
+               <textarea name="contents" id="" cols="30" rows="15" class="contentArea" placeholder="Enter the contents of your post" required></textarea>
+                <button id="createBtn" class="createBtn">Create</button>
+
+            </form>
+        </div>
+
+    </div>
     <script src="script/index.js"></script>
 </body>
 
