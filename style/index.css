@@ -59,7 +59,7 @@ body {
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.78);
     /* Black w/ opacity */
 }
 
@@ -91,6 +91,7 @@ body {
     text-decoration: none;
     cursor: pointer;
 }
+
 .modal-content h2 {
     margin-bottom: 5px;
     padding: 5px;
@@ -125,6 +126,7 @@ body {
 }
 .form p {
     text-align: center;
+    padding-top: 20px ;
 }
 
 /*  *********** CONTAINER SECTION ************/
