@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- **** Google fonts link -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <!-- ************  css link ******* -->
+    <link rel="stylesheet" href="style/index.css">
+</head>
+
+<body>
+    <!-- TODO: Include all your code for the header and home page here -->
+    <!-- *********** Header ****************** -->
+
+    <header class="navbar">
+        <div class="heading">
+            <h1 class="logo">Scribler</h1>
+            <span class="subHeading">Explore,</span>
+            <span class="subHeading">Imagine,</span>
+            <span class="subHeading">Create</span>
+        </div>
+        <div class="">
+            <button class="btns" id="signUpBtn">Sign Up</button>
+            <button class="btns" id="signInBtn">Sign In</button>
+
+        </div>
+
+        <div id="signUpModal" class="modal">
+
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Get Started</h2>
+                <hr>
+                <form action="" id="signUpForm" class="form">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                    <label for="name">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <label for="password">Confirm Password</label>
+                    <input type="text" placeholder="Re-enter your password" required>
+                    <button id="signUp" class="submit">Sign Up</button>
+                </form>
+            </div>
+
+        </div>
+
+        <div id="signInModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Welcome Back!</h2>
+                <hr>
+                <form action="" id="signInForm" class="form">
+                    <label for="name">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <button id="signUp" class="submit">Sign In</button>
+                    <p>Not a member? <span><a href="signUpModal">Sign Up</a></span></p>
+                </form>
+            </div>
+
+        </div>
+
+    </header>
+    <!-- ***** container ******* -->
+    <div class="container">
+        <button class="postBtn" id="addPost">Add Posts</button>
+        <button class="postBtn" id="createPost">Create Post</button>
+
+    </div>
+
+    <script src="script/index.js"></script>
+</body>
+
+</html>

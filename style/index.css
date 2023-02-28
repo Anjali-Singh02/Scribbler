@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-image: url(/images/background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+
+}
+
+/*  ********* NAVBAR SECTION *********** */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 2px;
+}
+
+.navbar .logo {
+    font-family: 'Montez', cursive;
+    color: blue;
+}
+
+.subHeading {
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.btns {
+    background-color: blue;
+    color: #fff;
+    padding: 7px;
+    margin: 5px;
+    width: 100px;
+    border: none;
+}
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* sign up modal */
+.modal-content {
+
+    background-color: #fefefe;
+    margin: 2% auto;
+    /* 15% from the top and centered */
+    padding: 10px;
+    border: 1px solid #888;
+    width: 25%;
+
+    /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    padding-right: 7px;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content h2 {
+    margin-bottom: 5px;
+    padding: 5px;
+    color: gray;
+}
+.modal-content .form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;   
+    
+}
+ label{
+    margin:7px;
+}
+ input {
+    padding: 10px;
+    margin:10px auto;
+    width: 90%;
+    left: 0;
+    border: none;
+    background: #dee2e6;
+}
+.submit {
+    padding: 10px;
+    margin: 20px auto auto 0;
+    width: 99%;
+    border: none;
+    background: #55a505c4;
+    border: none;
+    font-size: medium;
+    color: #fff;
+}
+.form p {
+    text-align: center;
+}
+
+/*  *********** CONTAINER SECTION ************/
+
+.container {
+    width: 100%;
+    position: absolute;
+    top: 54%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.postBtn {
+    background-color: #edc531;
+    border: none;
+    padding: 10px;
+    margin: 7px;
+    width: 140px;
+    box-shadow: 0px 0px 2px 4px #999;
+    font-size: 1.2rem;
+    border-radius: 2px
+}
