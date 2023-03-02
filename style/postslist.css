@@ -2,12 +2,13 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background: #ffeedd;
 }
 
 
- /* ****** HEADER SECTION *************** */
+/* ****** HEADER SECTION *************** */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -37,26 +38,58 @@ body {
 /* ********** POSTSLIST SECTION *********** */
 
 .postContainer {
+    margin-top: 20px;
     width: 100%;
-    /* display: flex; */
-    justify-content: center;
-   
-    /* text-align: center; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    ;
+    text-align: left;
 }
+
 .post {
-   
-   display: grid;
-   grid-template-areas:'userName postContent postContent postContent postContent';
-   gap: 10px;
-   justify-content: center;
-   align-items: center;
-    background: rgb(206, 200, 200);
-    width: 40%;
-    padding: 20px 10px;
-    margin: 10px;
+    display: inline-table;
+    border: 2px solid red;
     border-radius: 20px;
+    width: 40%;
+    margin: auto;
+    padding: 10px;
 }
+
 .userName {
-    background-color: white;
-  
+    display: table-cell;
+    background: white;
+
+    text-align: center;
+}
+
+.userName p {
+    font-size: large;
+}
+
+.postContent {
+
+    background: rgb(206, 200, 200);
+    padding: 5px 15px;
+}
+
+.postContent .title {
+    color: #808080;
+    font-size: larger;
+}
+
+/*  ******* delete icon ********  */
+
+.postContent span {
+
+    display: flex;
+    justify-content:end;
+    justify-self: flex-start
+    ;
+}
+
+.deleteIcon,
+.editIcon {
+    color: rgb(109, 108, 108);
+    width: 6%;
 }
