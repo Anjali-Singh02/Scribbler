@@ -1,7 +1,14 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postslist</title>
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+    <!-- ************  css link ******* -->
+    <link rel="stylesheet" href="/style/postslist.css">
     <!-- TODO: Include Font Awesome file here -->
     <!-- TODO: Include Google Fonts file here -->
 </head>
@@ -9,18 +16,33 @@
 <body>
     <!-- TODO: Include code for header here -->
 
+    <header class="navbar">
+        <div class="heading">
+            <h1 class="logo">Scribler</h1>
+            <span class="subHeading">Explore,</span>
+            <span class="subHeading">Imagine,</span>
+            <span class="subHeading">Create</span>
+        </div>
+        <div class="">
+            <button class="btns" id="signUpBtn">Sign Up</button>
+            <button class="btns" id="signInBtn">Sign In</button>
+
+        </div>
+
+
+    </header>
+
     <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
 
     <!-- list of all posts starts here -->
-    <div>
-
+    <div class="postContainer">
         <!-- post 1 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="userName">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
+            <div class="postContent">
                 <div>
                     <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
                     <span>
@@ -36,12 +58,12 @@
         <!-- post 1 ends here -->
 
         <!-- post 2 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="userName">
                 <p>Colby Fayock</p>
             </div>
 
-            <div>
+            <div class="postContent">
                 <div>
                     <p>What is linting and how can it save you time?</p>
                     <span>
@@ -57,12 +79,12 @@
         <!-- post 2 ends here -->
 
         <!-- post 3 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class= "userName">
                 <p>Yazeed Bzadough</p>
             </div>
 
-            <div>
+            <div class="postContent">
                 <div>
                     <p>How to Get More Views on Your Tech Blog</p>
                     <span>
@@ -78,8 +100,8 @@
         <!-- post 3 ends here -->
 
         <!-- post 4 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="userName">
                 <p>Cedd Burge</p>
             </div>
 
@@ -100,12 +122,12 @@
         <!-- post 4 ends here -->
 
         <!-- post 5 starts here -->
-        <div>
-            <div>
+        <div class="post">
+            <div class="userName">
                 <p>Srishti Gupta</p>
             </div>
 
-            <div>
+            <div class="postContent">
                 <div>
                     <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
                     <span>
@@ -125,6 +147,8 @@
 
     </div>
     <!-- list of all posts ends here -->
+
+    <script src="/script/postslist.js"></script>
 </body>
 
 </html>
