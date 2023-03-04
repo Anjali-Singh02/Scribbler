@@ -1,17 +1,8 @@
-const deleteModal = document.getElementById("deleteModal");
+// ************ Delete Modal ************* 
 
-// Get the button that opens the modal
-const deleteIcon = document.getElementsByClassName("deleteIcon");
+const deleteIcon = document.getElementsByClassName("deleteIcon")
+const deleteModal = document.getElementById("deleteBlog")
 
-// Get the <span> element that closes the modal
-const closeIcon2 = document.getElementById("closeCreate");
-
-// When the user clicks the button, open the modal 
-deleteIcon.onclick = function() {
-  createmodal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-closeIcon2.onclick = function() {
-  createmodal.style.display = "none";
-}
+deleteIcon.addEventListener("click", (event) => { 
+deleteModal.style.display = block;
+})

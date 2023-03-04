@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- **** Google fonts link -->
-    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-    <!-- ************  css link ******* -->
-    <link rel="stylesheet" href="style/index.css">
-    <link rel="stylesheet" href="style/common.css">
+    <title>Post page</title>
+    <link rel="stylesheet" href="/style/post.css">
+    <link rel="stylesheet" href="/style/index.css">
 </head>
-
 <body>
-    <!-- TODO: Include all your code for the header and home page here -->
-    <!-- *********** Header ****************** -->
-
     <header class="navbar">
         <div class="heading">
             <h1 class="logo">Scribler</h1>
@@ -67,37 +58,10 @@
                 <label for="password">Password</label>
                 <input type="password" placeholder="Enter your password" required>
                 <button id="signUp" class="submit">Sign In</button>
-                <p>Not a member? <span onclick="signUpModal()">Sign Up</span></p>
+                <p>Not a member? <span><a href="signUpModal">Sign Up</a></span></p>
             </form>
         </div>
 
     </div>
-    <!-- ***** container ******* -->
-    <div class="container">
-        <a href="html/postslist.html"><button class="postBtn" id="addPost">All Posts</button></a>
-        <button class="postBtn" id="createPost">Create Post</button>
-    </div>
-
-
-
-    <div id="createModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content" id="modalContent">
-            <span class="close" id="closeCreate">&times;</span>
-            <h2>Pen Your Post!</h2>
-            <hr>
-            <form action="" id="cPost" class="form">
-                <label for="title">Title</label>
-                <input type="text" placeholder="Enter title of your post" required>
-                <label for="content">Contents</label>
-               <textarea name="contents" id="" cols="30" rows="15" class="contentArea" placeholder="Enter the contents of your post" required></textarea>
-                <button id="createBtn" class="createBtn">Create</button>
-
-            </form>
-        </div>
-    </div>
-    <script src="script/index.js"></script>
-    <script src="script/common.js"></script>
 </body>
-
 </html>

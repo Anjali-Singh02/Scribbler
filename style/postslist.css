@@ -11,32 +11,40 @@
 /* ********** POSTSLIST SECTION *********** */
 
 .postContainer {
-    margin-top: 20px;
-    /* width: 100%; */
-    display: flex;
-    flex-wrap: wrap;
-
+    display: flex; 
+  height: 70%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 2%;
 }
-
 .post {
-    /* display: inline-table; */
-    /* border: 2px solid red; */
-    border-radius: 20px;
     width: 40%;
-    margin: auto;
-    padding: 10px;
-    
-}
+    background: #fff;
+    box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
+    margin: 10px 10px 10px 20px;
+    cursor: pointer;
+    border-radius: 15px;
+    height: fit-content;
 
+}
+.postcontent{
+  display: table-cell;
+  text-align: left;
+  background-color: #e8e8e8;
+  color: #000000;
+  border-radius: 0 15px 15px 0;
+  padding: 0 20px;
+ 
+
+}
 .userName {
+    width: 15%;
+    max-width: 15%;
     display: table-cell;
-    background: white;
     vertical-align: middle;
     text-align: center;
-}
-
-.userName p {
-    font-size: large;
+    font-weight: bold;
+    color: #000;
 }
 
 .postContent {
@@ -46,6 +54,11 @@
 }
 
 .content {
+    overflow: hidden;
+}
+.mainPost p {
+    font-size: medium;
+    height: 7.5vh;
     overflow: hidden;
 }
 .postContent .title {
@@ -69,7 +82,7 @@
 }
 
 .deleteModal {
-    display: none;
+    /* display: none; */
     padding: 20px;
     position: fixed;
     align-items: center;
