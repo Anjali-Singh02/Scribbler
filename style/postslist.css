@@ -23,9 +23,13 @@
     box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px 10px 10px 20px;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
     height: fit-content;
 
+}
+
+.post:hover {
+    box-shadow: 0 8px 5px 5px rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);;
 }
 .postcontent{
   display: table-cell;
@@ -49,7 +53,7 @@
 
 .postContent {
     display: table-cell;
-    background: rgb(206, 200, 200);
+    background: rgb(232, 229, 229);
     padding: 5px 15px;
 }
 
@@ -68,21 +72,25 @@
 
 /*  ******* delete icon ********  */
 
-.postContent span {
-
+.postContent span  {
+    color: rgb(109, 108, 108);
     display: flex;
     justify-content: end;
 }
-
-.deleteIcon,
-.editIcon {
-    color: rgb(109, 108, 108);
-    width: 6%;
+.postContent span  a{
+    display: flex;
+    justify-content: end;
+}
+.deleteIcon{    
+    width: 5%;
     cursor: pointer;
 }
-
-.deleteModal {
-    /* display: none; */
+.editIcon {  
+    width: 10%;
+}
+#deleteBlog {
+    display: none;
+    z-index: 1;
     padding: 20px;
     position: fixed;
     align-items: center;
@@ -92,15 +100,14 @@
     left: 40%;
     text-align: center;
     justify-content: center;
+  
 }
 
 .deletemodalBtns {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-
 }
-
 .deletemodalBtns button {
     width: 70px;
     padding: 10px;

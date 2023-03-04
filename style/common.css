@@ -25,9 +25,12 @@ body {
 
 .navbar .logo {
     font-family: 'Montez', cursive;
-    color: blue;
+    
 }
-
+.navbar a {
+    text-decoration: none;
+    color: blue;;
+}
 .subHeading {
     font-family: 'Ubuntu Mono', monospace;
 }

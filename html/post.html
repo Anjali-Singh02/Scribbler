@@ -5,13 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post page</title>
+
+      <!-- TODO: Include Google Fonts file here -->
+      <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
+     
+      <!-- ************  css link ******* -->
     <link rel="stylesheet" href="/style/post.css">
     <link rel="stylesheet" href="/style/index.css">
+    <link rel="stylesheet" href="/style/common.css">
 </head>
-<body>
+<body id="postBody">
     <header class="navbar">
         <div class="heading">
-            <h1 class="logo">Scribler</h1>
+            <a href="/index.html"> <h1 class="logo">Scribler</h1></a>
             <span class="subHeading">Explore,</span>
             <span class="subHeading">Imagine,</span>
             <span class="subHeading">Create</span>
@@ -58,10 +65,12 @@
                 <label for="password">Password</label>
                 <input type="password" placeholder="Enter your password" required>
                 <button id="signUp" class="submit">Sign In</button>
-                <p>Not a member? <span><a href="signUpModal">Sign Up</a></span></p>
+                <p>Not a member? <span onclick="signUpModal()">Sign Up</span></p>
             </form>
         </div>
 
     </div>
+    <script src="/script/common.js"></script>
+    <script src="/script/post.js"></script>
 </body>
 </html>
