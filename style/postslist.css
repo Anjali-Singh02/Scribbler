@@ -3,63 +3,35 @@
     padding: 0;
 }
 
-body {
+#body {
     background: #ffeedd;
 }
-
-
-/* ****** HEADER SECTION *************** */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 2px;
-}
-
-.navbar .logo {
-    font-family: 'Montez', cursive;
-    color: blue;
-}
-
-.subHeading {
-    font-family: 'Ubuntu Mono', monospace;
-}
-
-.btns {
-    background-color: blue;
-    color: #fff;
-    padding: 7px;
-    margin: 5px;
-    width: 100px;
-    border: none;
-}
-
 
 
 /* ********** POSTSLIST SECTION *********** */
 
 .postContainer {
     margin-top: 20px;
-    width: 100%;
+    /* width: 100%; */
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    ;
-    text-align: left;
+
 }
 
 .post {
-    display: inline-table;
-    border: 2px solid red;
+    /* display: inline-table; */
+    /* border: 2px solid red; */
     border-radius: 20px;
     width: 40%;
     margin: auto;
     padding: 10px;
+    
 }
 
 .userName {
     display: table-cell;
     background: white;
-
+    vertical-align: middle;
     text-align: center;
 }
 
@@ -68,11 +40,14 @@ body {
 }
 
 .postContent {
-
+    display: table-cell;
     background: rgb(206, 200, 200);
     padding: 5px 15px;
 }
 
+.content {
+    overflow: hidden;
+}
 .postContent .title {
     color: #808080;
     font-size: larger;
@@ -83,13 +58,52 @@ body {
 .postContent span {
 
     display: flex;
-    justify-content:end;
-    justify-self: flex-start
-    ;
+    justify-content: end;
 }
 
 .deleteIcon,
 .editIcon {
     color: rgb(109, 108, 108);
     width: 6%;
+    cursor: pointer;
+}
+
+.deleteModal {
+    display: none;
+    padding: 20px;
+    position: fixed;
+    align-items: center;
+    background-color: #fff;
+    width: 20%;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    justify-content: center;
+}
+
+.deletemodalBtns {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+
+}
+
+.deletemodalBtns button {
+    width: 70px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.deletemodalBtns button:hover {
+    transition: 0.5s ease-in-out;
+    transform: scale(1.06);
+}
+
+.deletemodalBtns #yesBtn {
+    background-color: rgb(9, 183, 9);
+}
+
+.deletemodalBtns #noBtn {
+    background-color: red;
 }
