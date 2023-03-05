@@ -1,3 +1,92 @@
 #postBody {
     background: #fff;
 }
+
+.postContainer {
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    height: fit-content;
+}
+
+.postContainer h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.postContainer .author {
+    font-size: larger;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+.postContainer .author-edit {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#editBtn,
+#comment,
+#likePost{
+    margin: 10px 0;
+    width: 100px;
+    padding: 10px 25px;
+    display: flex;
+    color: #fff;
+    background: red;
+    border: none;
+    text-align: center;
+    box-shadow: 0 6px 15px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
+   
+    background-color: #ed2553;
+   
+    /* padding: 5px 10px; */
+}
+
+.editIcon{
+    padding:0 6px;
+    width: 20px;
+}
+
+.likeIcon {
+    padding-right: 8px;
+    width: 10rem;
+}
+#likeIcon {
+    padding-right: 2px;
+    width: 10rem;
+}
+
+.postContainer .content {
+    padding: 10px;
+    width: 100%;
+    height: 30vh;
+    /* border: #ed2553; */
+}
+
+/* COMMENT SECTION */
+.commentContainer {
+    width: 40%;
+}
+
+textarea {
+    margin: 10px auto;
+    padding: 10px;
+    width: 50vw;
+    font-size: larger;
+    resize: none;
+}
+
+.commentContainer p {
+    margin: 10px auto;
+    border: 10px solid rgb(216, 213, 213);
+    border-right: 5px solid rgb(216, 213, 213);
+    border-left: 5px solid rgb(216, 213, 213);
+    padding: 10px;
+    width: 50vw;
+}
+.postContainer h3 {
+    padding-top: 20px;
+}

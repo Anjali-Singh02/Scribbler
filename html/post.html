@@ -1,84 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post page</title>
+    <!-- Font awesome -->
+    <script src="https://kit.fontawesome.com/0c6a8816f3.js" crossorigin="anonymous"></script>
+    <!-- TODO: Include Google Fonts file here -->
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 
-      <!-- TODO: Include Google Fonts file here -->
-      <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-     
-      <!-- ************  css link ******* -->
+    <!-- ************  css link ******* -->
     <link rel="stylesheet" href="/style/post.css">
     <link rel="stylesheet" href="/style/index.css">
     <link rel="stylesheet" href="/style/common.css">
 </head>
 <div class="mainContainer">
 
-
-<body id="postBody">
-    <header class="navbar">
-        <div class="heading">
-            <a href="/index.html"> <h1 class="logo">Scribler</h1></a>
-            <span class="subHeading">Explore,</span>
-            <span class="subHeading">Imagine,</span>
-            <span class="subHeading">Create</span>
-        </div>
-        <div class="">
-            <button class="btns" id="signUpBtn">Sign Up</button>
-            <button class="btns" id="signInBtn">Sign In</button>
-
-        </div>
-
-
-        <div id="signUpModal" class="modal">
-    
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close" id="closeSignUp">&times;</span>
-                <h2>Get Started</h2>
-                <hr>
-                <form action="" id="signUpForm" class="form">
-                    <label for="name">Name</label>
-                    <input type="text" placeholder="Enter your name" required>
-                    <label for="name">Username</label>
-                    <input type="text" placeholder="Enter your username" required>
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Enter your password" required>
-                    <label for="password">Confirm Password</label>
-                    <input type="text" placeholder="Re-enter your password" required>
-                    <button id="signUp" class="submit">Sign Up</button>
-                </form>
+   
+    <body id="postBody">
+        <header class="navbar">
+            <div class="heading">
+                <a href="/index.html">
+                    <h1 class="logo">Scribler</h1>
+                </a>
+                <span class="subHeading">Explore,</span>
+                <span class="subHeading">Imagine,</span>
+                <span class="subHeading">Create</span>
             </div>
-    
-        </div>
-    
-        <div id="signInModal" class="modal">
-            <!-- Modal content -->
-            <div class="modal-content">
-                <span class="close" id="closeSignIn">&times;</span>
-                <h2>Welcome Back!</h2>
-                <hr>
-                <form action="" id="signInForm" class="form">
-                    <label for="name">Username</label>
-                    <input type="text" placeholder="Enter your username" required>
-                    <label for="password">Password</label>
-                    <input type="password" placeholder="Enter your password" required>
-                    <button id="signUp" class="submit">Sign In</button>
-                    <p>Not a member? <span onclick="signUpModal()">Sign Up</span></p>
-                </form>
+            <div class="">
+                <button class="btns" id="signUpBtn">Sign Up</button>
+                <button class="btns" id="signInBtn">Sign In</button>
+
+            </div>
+
+
+            <div id="signUpModal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" id="closeSignUp">&times;</span>
+                    <h2>Get Started</h2>
+                    <hr>
+                    <form action="" id="signUpForm" class="form">
+                        <label for="name">Name</label>
+                        <input type="text" placeholder="Enter your name" required>
+                        <label for="name">Username</label>
+                        <input type="text" placeholder="Enter your username" required>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                        <label for="password">Confirm Password</label>
+                        <input type="text" placeholder="Re-enter your password" required>
+                        <button id="signUp" class="submit">Sign Up</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <div id="signInModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close" id="closeSignIn">&times;</span>
+                    <h2>Welcome Back!</h2>
+                    <hr>
+                    <form action="" id="signInForm" class="form">
+                        <label for="name">Username</label>
+                        <input type="text" placeholder="Enter your username" required>
+                        <label for="password">Password</label>
+                        <input type="password" placeholder="Enter your password" required>
+                        <button id="signUp" class="submit">Sign In</button>
+                        <p>Not a member? <span onclick="signUpModal()">Sign Up</span></p>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- Main body  -->
+        <div class="postContainer">
+            <h2>Everything you should know about 'module' $ 'require' in Node.js</h2>
+            <span class="author-edit"> <span class="author">Srishti Gupta</span>
+                <button type="button" id="editBtn" onclick="changeText()">Edit <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                        fill="currentColor" class="editIcon">
+                        <path
+                            d="M5.433 13.917l1.262-3.155A4 4 0 017.58 9.42l6.92-6.918a2.121 2.121 0 013 3l-6.92 6.918c-.383.383-.84.685-1.343.886l-3.154 1.262a.5.5 0 01-.65-.65z" />
+                        <path
+                            d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0010 3H4.75A2.75 2.75 0 002 5.75v9.5A2.75 2.75 0 004.75 18h9.5A2.75 2.75 0 0017 15.25V10a.75.75 0 00-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5z" />
+                    </svg>
+                </button></span>
+
+            <textarea type="text" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam velit quasi
+                animi. Aperiam culpa necessitatibus provident aspernatur tenetur aliquam iure fugiat tempore rem?
+                Pariatur recusandae quod sapiente suscipi Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Aliquid dicta perspiciatis praesentium blanditiis suscipit voluptate vitae rem id, voluptates assumenda?
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dignissimos totam deleniti dolorum
+                laudantium exercitationem ducimus obcaecati explicabo provident numquam inventore, accusamus earum rerum
+                magni nihil tenetur aliquam facere? Atque voluptates voluptate enim obcaecati, laudantium sapiente ex
+                dignissimos magni temporibus quo doloribus unde nesciunt voluptas in soluta repellendus, libero
+                officiis.
+            </textarea>
+            <!-- LIKE SECTION -->
+            <div class="like">
+                <button id="likePost" onclick="likePost()">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                        stroke="currentColor" class="likeIcon">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M6.633 10.5c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 012.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 00.322-1.672V3a.75.75 0 01.75-.75A2.25 2.25 0 0116.5 4.5c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 01-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 00-1.423-.23H5.904M14.25 9h2.25M5.904 18.75c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 01-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 10.203 4.167 9.75 5 9.75h1.053c.472 0 .745.556.5.96a8.958 8.958 0 00-1.302 4.665c0 1.194.232 2.333.654 3.375z" />
+                    </svg>
+                    Like
+                </button>
+                <span id="likeCount">Be the first one to like this!</span>
+            </div>
+            <!-- COMMENT BOX -->
+            <div class="commentContainer">
+
+                <textarea type="text" placeholder="Leave a comment..." id="userComments" value="" rows="3"
+                    cols="50"></textarea>
+                <button id="comment" onclick="addComments(userComments)">Comment</button>
+                <h3>All Comments</h3>
+                <div id="addEventNames"></div>
             </div>
         </div>
-    </header>
-
-<div class="postContainer">
-    
 </div>
 
-</div>
-    <script src="/script/common.js"></script>
-    <script src="/script/post.js"></script>
+<script src="/script/common.js"></script>
+<script src="/script/post.js"></script>
 </body>
+
 </html>
