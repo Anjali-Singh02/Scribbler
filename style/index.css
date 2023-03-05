@@ -1,7 +1,15 @@
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 10px;
+}
 
 
 
 /* ****** Create modal ************* */
+
 
 #modalContent {
     background-color: #fefefe;
@@ -39,10 +47,10 @@
 
 /*  *********** CONTAINER SECTION ************/
 .container {
-    width: 100%;
-    position: absolute;
-    top: 54%;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+   flex-grow: 1;
+   align-items: center;
     text-align: center;
 }
 .postBtn {

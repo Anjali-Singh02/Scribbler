@@ -15,6 +15,9 @@
     <link rel="stylesheet" href="/style/index.css">
     <link rel="stylesheet" href="/style/common.css">
 </head>
+<div class="mainContainer">
+
+
 <body id="postBody">
     <header class="navbar">
         <div class="heading">
@@ -30,46 +33,51 @@
         </div>
 
 
+        <div id="signUpModal" class="modal">
+    
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="closeSignUp">&times;</span>
+                <h2>Get Started</h2>
+                <hr>
+                <form action="" id="signUpForm" class="form">
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Enter your name" required>
+                    <label for="name">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <label for="password">Confirm Password</label>
+                    <input type="text" placeholder="Re-enter your password" required>
+                    <button id="signUp" class="submit">Sign Up</button>
+                </form>
+            </div>
+    
+        </div>
+    
+        <div id="signInModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" id="closeSignIn">&times;</span>
+                <h2>Welcome Back!</h2>
+                <hr>
+                <form action="" id="signInForm" class="form">
+                    <label for="name">Username</label>
+                    <input type="text" placeholder="Enter your username" required>
+                    <label for="password">Password</label>
+                    <input type="password" placeholder="Enter your password" required>
+                    <button id="signUp" class="submit">Sign In</button>
+                    <p>Not a member? <span onclick="signUpModal()">Sign Up</span></p>
+                </form>
+            </div>
+        </div>
     </header>
-    <div id="signUpModal" class="modal">
 
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close" id="closeSignUp">&times;</span>
-            <h2>Get Started</h2>
-            <hr>
-            <form action="" id="signUpForm" class="form">
-                <label for="name">Name</label>
-                <input type="text" placeholder="Enter your name" required>
-                <label for="name">Username</label>
-                <input type="text" placeholder="Enter your username" required>
-                <label for="password">Password</label>
-                <input type="password" placeholder="Enter your password" required>
-                <label for="password">Confirm Password</label>
-                <input type="text" placeholder="Re-enter your password" required>
-                <button id="signUp" class="submit">Sign Up</button>
-            </form>
-        </div>
+<div class="postContainer">
+    
+</div>
 
-    </div>
-
-    <div id="signInModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close" id="closeSignIn">&times;</span>
-            <h2>Welcome Back!</h2>
-            <hr>
-            <form action="" id="signInForm" class="form">
-                <label for="name">Username</label>
-                <input type="text" placeholder="Enter your username" required>
-                <label for="password">Password</label>
-                <input type="password" placeholder="Enter your password" required>
-                <button id="signUp" class="submit">Sign In</button>
-                <p>Not a member? <span onclick="signUpModal()">Sign Up</span></p>
-            </form>
-        </div>
-
-    </div>
+</div>
     <script src="/script/common.js"></script>
     <script src="/script/post.js"></script>
 </body>
