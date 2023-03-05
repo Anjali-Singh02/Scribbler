@@ -9,29 +9,22 @@ const deletePost =(post1) => {
     console.log(post1)
 }
 
-// yesBtn.addEventListener = ('click',(event) => {
-//     deleteModal.style.display = "none"
-// })
-
 const no = () => {
     deleteModal.style.display = "none"
 }
 
-
-
-
 //  Post List function
 
 var id="";
-function setId(htmlId){
+const setId = (htmlId) =>{
     deleteModal.style.display="block";
     id=htmlId;
 }
-function yes(){
+const yes = () => {
     deleteModal.style.display="none";
     document.getElementById(id).style.display="none";
 }
-function settingContentOfId(getUser,getTitle,getContent){
+const settingContentOfId = (getUser,getTitle,getContent) => {
     let userName=document.getElementById(getUser).innerText;
     localStorage.setItem('userName',userName);
     let titleOfPost=document.getElementById(getTitle).innerText;

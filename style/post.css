@@ -1,92 +1,93 @@
 #postBody {
     background: #fff;
+    
 }
 
-.postContainer {
-    padding: 40px 50px;
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    width: 100%;
+    word-break: break-all;
+}
+#container{
     display: flex;
     flex-direction: column;
-    text-align: justify;
-    height: fit-content;
+    margin: auto;
+    width: 95%;
+    height: 100%;
 }
-
-.postContainer h2 {
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.postContainer .author {
-    font-size: larger;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu Mono', monospace;
-}
-
-.postContainer .author-edit {
+#header{
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    margin-top: 1%;
 }
-
-#editBtn,
-#comment,
-#likePost{
-    margin: 10px 0;
-    width: 100px;
-    padding: 10px 25px;
-    display: flex;
-    color: #fff;
-    background: red;
+#userName{
+    font-family: 'Ubuntu Mono';
+}
+#editBtn{
+    font-size: 1vw;
+    width: 8%;
+    padding: 0.5%;
+    background-color: rgb(255, 18, 18);
+    color: white;
+    box-shadow: 0 2px 4px 0 #ed2553, 0 3px 10px 0 #ed2553;
     border: none;
-    text-align: center;
-    box-shadow: 0 6px 15px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
-   
-    background-color: #ed2553;
-   
-    /* padding: 5px 10px; */
 }
-
-.editIcon{
-    padding:0 6px;
-    width: 20px;
+#editIcon{
+    margin-left:10%;
 }
-
-.likeIcon {
-    padding-right: 8px;
-    width: 10rem;
+#content{
+    margin-top: 3%;
+    font-size: 0.9vw;
+    word-break: break-all;
 }
-#likeIcon {
-    padding-right: 2px;
-    width: 10rem;
+#likeIcon{
+    margin-right:10%;
 }
-
-.postContainer .content {
-    padding: 10px;
-    width: 100%;
+#likeBtn,#cmntBtn{
+    font-size: 1vw;
+    width: 8%;
+    padding: 0.5%;
+    margin-top: 1%;
+    background-color: rgb(255, 18, 18);
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px 0 #ed2553, 0 3px 10px 0 #ed2553;
+}
+#likePrompt{
+    margin-top: 1%;
+}
+#commentBox{
+    width: 60%;
     height: 20vh;
-    /* border: #ed2553; */
-}
-
-/* COMMENT SECTION */
-.commentContainer {
-    width: 40%;
-}
-
-textarea {
-    margin: 10px auto;
-    padding: 10px;
-    width: 50vw;
-    font-size: larger;
+    margin-top: 1%;
     resize: none;
 }
-
-.commentContainer p {
-    margin: 10px auto;
+#cmntContent{
+    margin: 5px 0;
     border: 10px solid rgb(216, 213, 213);
     border-right: 5px solid rgb(216, 213, 213);
     border-left: 5px solid rgb(216, 213, 213);
     padding: 10px;
     width: 50vw;
 }
-.postContainer h3 {
-    padding-top: 20px;
+#cmntPromt{
+    margin-top: 1.5%;
+    font-weight: 600;
+    font-family: 'Ubuntu Mono';
+}
+#editingTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid orangered;
+    font-weight: bold;
+    word-break: break-all;
+}
+#editingContent{
+    margin-top: 3%;
+    word-break: break-all;
+    border: 1px solid orangered;
 }
