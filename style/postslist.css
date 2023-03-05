@@ -20,8 +20,9 @@
     box-shadow: 0 4px 10px 0 rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);
     margin: 10px 10px 10px 20px;
     cursor: pointer;
-    border-radius: 10px;
+    border-radius: 15px;
     height: fit-content;
+    overflow: hidden;
 }
 .post:hover {
     box-shadow: 0 8px 5px 5px rgba(17, 4, 63, 0.2), 0 4px 20px 0 rgba(79, 19, 97, 0.19);;
@@ -61,23 +62,29 @@
     overflow: hidden;
 }
 .postContent .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     color: #808080;
     font-size: larger;
+    padding: 10px 0;
 }
-
+.postContent .title span {
+    margin-right: 5px;
+}
 /*  ******* delete icon ********  */
 
 .postContent span  {
     color: rgb(109, 108, 108);
     display: flex;
-    justify-content: end;
+   justify-content: end;
 }
 .postContent span  a{
     display: flex;
     justify-content: end;
 }
 .deleteIcon{    
-    width: 5%;
+    width: 20px;
     cursor: pointer;
 }
 .editIcon {  
@@ -116,9 +123,6 @@
     position: fixed;
     /* Stay in place */
     z-index: 1;
-    /* Sit on top */
-    padding-top: 100px;
-    /* Location of the box */
     left: 0;
     top: 0;
     width: 100%;
@@ -131,17 +135,21 @@
     /* Fallback color */
     background-color: rgba(0, 0, 0, 0.78);
     /* Black w/ opacity */
+     
 }
 
 /* sign up modal */
 .content-deleteModal{
-
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
     background-color: #fefefe;
     margin: 2% auto;
     /* 15% from the top and centered */
     padding: 10px;
     border: 1px solid #888;
     width: 25%;
-
+   
     /* Could be more or less, depending on screen size */
 }

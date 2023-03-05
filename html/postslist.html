@@ -76,42 +76,38 @@
     <div class="postContainer">
         <!-- post 1 starts here -->
         <div class="post" id="post1">
-            <div class="userName">
-                <p>Srishti Gupta </p>
+            <div class="userName" id="userName">
+                <p id="author1">Srishti Gupta </p>
             </div>
 
-            <div class="postContent">
-                <div class="title">
-                    <p>‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
-                    <span>
+            <div class="postContent" id="post-content">
+                <div class="title" >
+                    <p id="title1">‘let’ me be a ‘const’(ant), not a ‘var’(iable)!</p>
+                    <span onclick="setId('post1')">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
-                        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
-                            class="deleteIcon" onclick="deletePost()">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
+                            class="deleteIcon" id="deleteIcon" onclick="deletePost(post1)">
                             <path fill-rule="evenodd"
                                 d="M16.5 4.478v.227a48.816 48.816 0 013.878.512.75.75 0 11-.256 1.478l-.209-.035-1.005 13.07a3 3 0 01-2.991 2.77H8.084a3 3 0 01-2.991-2.77L4.087 6.66l-.209.035a.75.75 0 01-.256-1.478A48.567 48.567 0 017.5 4.705v-.227c0-1.564 1.213-2.9 2.816-2.951a52.662 52.662 0 013.369 0c1.603.051 2.815 1.387 2.815 2.951zm-6.136-1.452a51.196 51.196 0 013.273 0C14.39 3.05 15 3.684 15 4.478v.113a49.488 49.488 0 00-6 0v-.113c0-.794.609-1.428 1.364-1.452zm-.355 5.945a.75.75 0 10-1.5.058l.347 9a.75.75 0 101.499-.058l-.346-9zm5.48.058a.75.75 0 10-1.498-.058l-.347 9a.75.75 0 001.5.058l.345-9z"
                                 clip-rule="evenodd" />
-                        </svg> -->
-
-                        <i class="fa-solid fa-trash"></i>
-
+                        </svg>
                     </span>
                 </div>
                 <div class="mainPost">
-                    <p class="content">Since JavaScript does not have any type-checking, either of these keywords can be
+                    <p class="content" id="description1">Since JavaScript does not have any type-checking, either of these keywords can be
                         used to declare a
                         variable of any type (datatype) in JavaScript. Though all the three keywords are used for the
                         same
                         purpose, they are different.</p>
-                    <span>
+                    <span id="postContentFooter" onclick="window.location.href ='/html/post.html'">
                         <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <a href="/html/post.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="currentColor" class="editIcon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                fill="currentColor" class="editIcon" id="menuIcon" onclick="settingContentOfId('user1','title1','description1')">
                                 <path fill-rule="evenodd"
                                     d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
                                     clip-rule="evenodd" />
                             </svg>
-                        </a>
-
+                    
                     </span>
                 </div>
             </div>
@@ -120,14 +116,14 @@
 
         <!-- post 2 starts here -->
         <div class="post" id="post2">
-            <div class="userName">
-                <p>Colby Fayock</p>
+            <div class="userName" id="userName">
+                <p id="author2">Colby Fayock</p>
             </div>
 
-            <div class="postContent">
+            <div class="postContent" id="post-content">
                 <div class="title">
-                    <p>What is linting and how can it save you time?</p>
-                    <span>
+                    <p id="title2">What is linting and how can it save you time?</p>
+                    <span onclick="setId('post2')">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="deleteIcon" onclick="deletePost()">
@@ -142,16 +138,16 @@
                     <p class="content">One of the biggest challenges in software development is time. It’s something we
                         can’t easily get
                         more of, but linting can help us make the most out of the time we have.</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <a href="/html/post.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="currentColor" class="editIcon">
-                                <path fill-rule="evenodd"
-                                    d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-                    </span>
+                        <span id="postContentFooter" onclick="window.location.href ='/html/post.html'">
+                            <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor" class="editIcon" id="menuIcon" onclick="settingContentOfId('user2','title2','description2')">
+                                    <path fill-rule="evenodd"
+                                        d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                        
+                        </span>
                 </div>
             </div>
         </div>
@@ -159,15 +155,15 @@
 
         <!-- post 3 starts here -->
         <div class="post" id="post3">
-            <div class="userName">
-                <p>Yazeed Bzadough</p>
+            <div class="userName" id="userName">
+                <p id="author3">Yazeed Bzadough</p>
             </div>
 
-            <div class="postContent">
+            <div class="postContent" id="post-content">
                 <div class="title">
 
-                    <p>How to Get More Views on Your Tech Blog</p>
-                    <span>
+                    <p id="title3">How to Get More Views on Your Tech Blog</p>
+                    <span onclick="setId('post3')">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="deleteIcon" onclick="deletePost()">
@@ -184,17 +180,16 @@
                         blog, YouTube channel, or Patreon. We all want to become stars, or at the very least, a
                         recognizable
                         name in the industry</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <a href="/html/post.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="currentColor" class="editIcon">
-                                <path fill-rule="evenodd"
-                                    d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-
-                    </span>
+                        <span id="postContentFooter" onclick="window.location.href ='/html/post.html'">
+                            <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor" class="editIcon" id="menuIcon" onclick="settingContentOfId('user3','title3','description3')">
+                                    <path fill-rule="evenodd"
+                                        d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                        
+                        </span>
                 </div>
             </div>
         </div>
@@ -202,14 +197,14 @@
 
         <!-- post 4 starts here -->
         <div class="post" id="post4">
-            <div class="userName">
-                <p>Cedd Burge</p>
+            <div class="userName" id="userName">
+                <p id="author4">Cedd Burge</p>
             </div>
 
-            <div class="postContent">
+            <div class="postContent" id="post-content">
                 <div class="title">
-                    <p>How to write easily describable code</p>
-                    <span>
+                    <p id="title4">How to write easily describable code</p>
+                    <span onclick="setId('post4')">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="deleteIcon" onclick="deletePost()">
@@ -226,17 +221,16 @@
                         words. This wastes mental energy, and you run the risk of getting the mapping wrong. Different
                         people will map to different words, which
                         leads to confusion when discussing the code.</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <a href="/html/post.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="currentColor" class="editIcon">
-                                <path fill-rule="evenodd"
-                                    d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-
-                    </span>
+                        <span id="postContentFooter" onclick="window.location.href ='/html/post.html'">
+                            <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor" class="editIcon" id="menuIcon" onclick="settingContentOfId('user4','title4','description4')">
+                                    <path fill-rule="evenodd"
+                                        d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                        
+                        </span>
                 </div>
             </div>
         </div>
@@ -244,14 +238,14 @@
 
         <!-- post 5 starts here -->
         <div class="post" id="post5">
-            <div class="userName">
-                <p>Srishti Gupta</p>
+            <div class="userName" id="userName">
+                <p id="author5">Srishti Gupta</p>
             </div>
 
-            <div class="postContent">
+            <div class="postContent" id="post-content">
                 <div class="title">
-                    <p>Everything you should know about ‘module’ & ‘require’ in Node.js</p>
-                    <span>
+                    <p id="title5">Everything you should know about ‘module’ & ‘require’ in Node.js</p>
+                    <span onclick="setId('post5')">
                         <!-- TODO: Include Font Awesome icon for delete icon here -->
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
                             class="deleteIcon" onclick="deletePost()">
@@ -269,17 +263,16 @@
                         can
                         say that you’ve created a module
                         named xyz.</p>
-                    <span>
-                        <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
-                        <a href="/html/post.html"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                fill="currentColor" class="editIcon">
-                                <path fill-rule="evenodd"
-                                    d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
-                                    clip-rule="evenodd" />
-                            </svg>
-                        </a>
-
-                    </span>
+                        <span id="postContentFooter" onclick="window.location.href ='/html/post.html'">
+                            <!-- TODO: Include Font Awesome icon for horizontal ellipsis icon here -->
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                                    fill="currentColor" class="editIcon" id="menuIcon" onclick="settingContentOfId('user5','title5','description5')">
+                                    <path fill-rule="evenodd"
+                                        d="M4.5 12a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0zm6 0a1.5 1.5 0 113 0 1.5 1.5 0 01-3 0z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                        
+                        </span>
                 </div>
             </div>
         </div>

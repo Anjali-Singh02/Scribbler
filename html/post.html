@@ -7,14 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Post page</title>
     <!-- Font awesome -->
-    <script src="https://kit.fontawesome.com/0c6a8816f3.js" crossorigin="anonymous"></script>
     <!-- TODO: Include Google Fonts file here -->
     <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap" rel="stylesheet">
-
+    
     <!-- ************  css link ******* -->
     <link rel="stylesheet" href="/style/post.css">
     <link rel="stylesheet" href="/style/index.css">
+    <script src="https://kit.fontawesome.com/a48953f075.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/style/common.css">
 </head>
 <div class="mainContainer">
@@ -77,8 +77,12 @@
             </div>
         </header>
         <!-- Main body  -->
+
+        <section id="title"></section>
+        <div id="container">
+            <div id="header">
+              <div id="userName"></div>
         <div class="postContainer">
-            <h2>Everything you should know about 'module' $ 'require' in Node.js</h2>
             <span class="author-edit"> <span class="author">Srishti Gupta</span>
                 <button type="button" id="editBtn" onclick="changeText()">Edit <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
                         fill="currentColor" class="editIcon">
@@ -87,18 +91,10 @@
                         <path
                             d="M3.5 5.75c0-.69.56-1.25 1.25-1.25H10A.75.75 0 0010 3H4.75A2.75 2.75 0 002 5.75v9.5A2.75 2.75 0 004.75 18h9.5A2.75 2.75 0 0017 15.25V10a.75.75 0 00-1.5 0v5.25c0 .69-.56 1.25-1.25 1.25h-9.5c-.69 0-1.25-.56-1.25-1.25v-9.5z" />
                     </svg>
-                </button></span>
-
-            <textarea type="text" class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt totam velit quasi
-                animi. Aperiam culpa necessitatibus provident aspernatur tenetur aliquam iure fugiat tempore rem?
-                Pariatur recusandae quod sapiente suscipi Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquid dicta perspiciatis praesentium blanditiis suscipit voluptate vitae rem id, voluptates assumenda?
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit dignissimos totam deleniti dolorum
-                laudantium exercitationem ducimus obcaecati explicabo provident numquam inventore, accusamus earum rerum
-                magni nihil tenetur aliquam facere? Atque voluptates voluptate enim obcaecati, laudantium sapiente ex
-                dignissimos magni temporibus quo doloribus unde nesciunt voluptas in soluta repellendus, libero
-                officiis.
-            </textarea>
+                </button>
+            </span>
+            <section id="content"></section>
+        
             <!-- LIKE SECTION -->
             <div class="like">
                 <button id="likePost" onclick="likePost()">
