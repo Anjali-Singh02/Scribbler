@@ -25,10 +25,13 @@ const yes = () => {
     document.getElementById(id).style.display="none";
 }
 const settingContentOfId = (getUser,getTitle,getContent) => {
+    console.log("get user" , getUser)
     let userName=document.getElementById(getUser).innerText;
+    
     localStorage.setItem('userName',userName);
     let titleOfPost=document.getElementById(getTitle).innerText;
     localStorage.setItem('title',titleOfPost);
     let contentOfPost=document.getElementById(getContent).innerText;
     localStorage.setItem('content',contentOfPost);
+    console.log("fun invoke" )
 }

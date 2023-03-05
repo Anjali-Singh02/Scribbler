@@ -8,8 +8,8 @@ window.onload=function() {
 }
 const title = document.getElementById('title');
 const content = document.getElementById('content');
-const flag = false;
-const counter = 0;
+let flag = false;
+let counter = 0;
 const btn=document.getElementById('editBtn');
 function edit(){
     let help=false;
