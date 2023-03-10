@@ -26,12 +26,12 @@ const yes = () => {
 }
 const settingContentOfId = (getUser,getTitle,getContent) => {
     console.log("get user" , getUser)
-    let userName=document.getElementById(getUser).innerText;
+    let userName=document.getElementById(getUser).innerHTML;
     
     localStorage.setItem('userName',userName);
-    let titleOfPost=document.getElementById(getTitle).innerText;
+    let titleOfPost=document.getElementById(getTitle).innerHTML;
     localStorage.setItem('title',titleOfPost);
-    let contentOfPost=document.getElementById(getContent).innerText;
+    let contentOfPost=document.getElementById(getContent).innerHTML;
     localStorage.setItem('content',contentOfPost);
     console.log("fun invoke" )
 }

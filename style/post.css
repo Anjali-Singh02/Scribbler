@@ -9,6 +9,7 @@
     align-items: center;
     font-weight: bold;
     width: 100%;
+    font-size: xx-large;
     word-break: break-all;
 }
 #container{
@@ -25,6 +26,7 @@
 }
 #userName{
     font-family: 'Ubuntu Mono';
+    font-size: x-large;
 }
 #editBtn{
     font-size: 1vw;
@@ -40,8 +42,9 @@
 }
 #content{
     margin-top: 3%;
-    font-size: 0.9vw;
+  
     word-break: break-all;
+    font-size: 1.2rem;
 }
 #likeIcon{
     margin-right:10%;

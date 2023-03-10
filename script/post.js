@@ -4,7 +4,7 @@ window.onload=function() {
     console.log(localStorage.getItem('content'))
     document.getElementById("title").innerText=localStorage.getItem('title')
     document.getElementById("userName").innerText=localStorage.getItem('userName')
-    document.getElementById("content").innerText=localStorage.getItem('content')
+    document.getElementById("content").innerHTML=localStorage.getItem('content')
 }
 const title = document.getElementById('title');
 const content = document.getElementById('content');
